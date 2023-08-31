@@ -6,7 +6,35 @@
     <title>Etch-a-Sketch</title>
 
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="scripts/script.js" defer></script>
   </head>
-  <body></body>
+
+  <body>
+    <h1>Etch-a-Sketch</h1>
+
+    <div class="grid-container">
+      <div class="grid"></div>
+      <div class="buttons-container">
+        <button class="normal-mode" onclick="enterNormalMode()">
+          Normal Mode
+        </button>
+        <button class="rainbow-mode" onclick="enterRainbowMode()">
+          Rainbow Mode
+        </button>
+        <button class="eraser" onclick="eraseItems()">Eraser</button>
+        <button class="clear" onclick="clearGrid()">Clear</button>
+        <button class="new-sketch" onclick="newGrid()">New Sketch</button>
+      </div>
+    </div>
+  </body>
 </html>
